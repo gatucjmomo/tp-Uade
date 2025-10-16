@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones - Calzate Esta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="Logo picado.png" alt="Calzate Esta" style="height:140px; width:auto;">
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="promociones.html" class="active">Promociones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <h1 class="section-title">Promociones Especiales</h1>
+            
+            <div class="promo-banner">
+                <h2>🎉 3x2 en Medias Clásicas</h2>
+                <p style="font-size: 1.2rem;">Llevá 3 pares y pagá solo 2</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📦</div>
+                    <h3>Combo Familiar</h3>
+                    <p>6 pares de medias variadas</p>
+                    <div class="product-price">$6500</div>
+                    <p style="color: #666; text-decoration: line-through;">Antes: $8400</p>
+                    <button class="btn" style="margin-top: 1rem;">Comprar ahora</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎁</div>
+                    <h3>Pack Ejecutivo</h3>
+                    <p>5 pares de medias formales</p>
+                    <div class="product-price">$7500</div>
+                    <p style="color: #666; text-decoration: line-through;">Antes: $9000</p>
+                    <button class="btn" style="margin-top: 1rem;">Comprar ahora</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">⭐</div>
+                    <h3>Combo Deportivo</h3>
+                    <p>4 pares + toalla deportiva</p>
+                    <div class="product-price">$5500</div>
+                    <p style="color: #666; text-decoration: line-through;">Antes: $7000</p>
+                    <button class="btn" style="margin-top: 1rem;">Comprar ahora</button>
+                </div>
+            </div>
+
+            <div class="info-box" style="margin-top: 3rem; background: #fff3cd; border-left: 4px solid #ffc107;">
+                <h3 style="color: #856404;">💡 Tip de Compra</h3>
+                <p style="color: #856404;">Renovando tu stock de medias ahorrás más. Consultá por descuentos en compras mayoristas.</p>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem;">
+                <h3 style="color: #2c3e50; margin-bottom: 1rem;">📅 Promociones Vigentes</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ 3x2 en medias clásicas - Válido hasta fin de mes</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ 20% OFF en compras mayores a $10.000</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ Envío gratis en compras superiores a $8.000</li>
+                    <li style="padding: 0.5rem 0;">✅ Descuento especial para estudiantes con credencial</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Calzate Esta - Todos los derechos reservados</p>
+        <p>Local 145, Centro Comercial Las Palmas | Tel: (011) 4567-8900</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

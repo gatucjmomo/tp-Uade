@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Calzate Esta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="Logo picado.png" alt="Calzate Esta" style="height:140px; width:auto;">
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <h1 class="section-title">Nuestros Productos</h1>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666;">Descubre nuestra amplia selección de medias para todos los gustos</p>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Medias clasicas.jpeg" alt="Medias Clásicas" style="height:120px; width:auto; display:block; margin:0 auto;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Medias Clásicas</h3>
+                        <p>Medias de algodón para uso diario, cómodas y resistentes</p>
+                        <div class="product-price">$1200</div>
+                        <button class="btn">Ver detalles</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(45deg, #f093fb, #f5576c);">
+                        <img src="medias coloridas.png" alt="Medias Coloridas" style="height:120px; width:auto; display:block; margin:0 auto;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Medias Coloridas</h3>
+                        <p>Diseños vibrantes y divertidos para darle vida a tu outfit</p>
+                        <div class="product-price">$1500</div>
+                        <button class="btn">Ver detalles</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="medias formales.png" alt="Medias Ejecutivas" style="height:120px; width:auto; display:block; margin:0 auto;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Medias Ejecutivas</h3>
+                        <p>Elegancia y formalidad para el ámbito profesional</p>
+                        <div class="product-price">$1800</div>
+                        <button class="btn">Ver detalles</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(45deg, #ffecd2, #fcb69f);">
+                        <img src="Medias deportivas.png" alt="Medias Deportivas" style="height:120px; width:auto; display:block; margin:0 auto;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Medias Deportivas</h3>
+                        <p>Perfectas para tu rutina de ejercicio y actividades</p>
+                        <div class="product-price">$1600</div>
+                        <button class="btn">Ver detalles</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(45deg, #ff9a9e, #fecfef);">
+                        <img src="Medias de invierno.jpeg" alt="Medias de Invierno" style="height:120px; width:auto; display:block; margin:0 auto;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Medias de Invierno</h3>
+                        <p>Extra cálidas y suaves para los días fríos</p>
+                        <div class="product-price">$2000</div>
+                        <button class="btn">Ver detalles</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(45deg, #fbc2eb, #a6c1ee);">
+                        <img src="Medias infantiles.jpeg" alt="Medias Infantiles" style="height:120px; width:auto; display:block; margin:0 auto;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Medias Infantiles</h3>
+                        <p>Diseños adorables y cómodos para los más pequeños</p>
+                        <div class="product-price">$900</div>
+                        <button class="btn">Ver detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Calzate Esta - Todos los derechos reservados</p>
+        <p>Local 145, Centro Comercial Las Palmas | Tel: (011) 4567-8900</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
