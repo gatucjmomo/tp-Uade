@@ -1,62 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang=\"es\">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <title>Inicio - Calzate Esta</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel=\"stylesheet\" href=\"styles.css\">
+    <!-- jQuery -->
+    <script src=\"https://code.jquery.com/jquery-3.7.1.min.js\"></script>
+    <!-- Script principal -->
+    <script src=\"script.js\" defer></script>
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <div class="header-content">
-            <a href="index.html" class="logo">
-                <img src="Logo picado.png" alt="Calzate Esta" style="height:140px; width:auto;">
+        <div class=\"header-content\">
+            <a href=\"index.html\" class=\"logo\">
+                <img src=\"Logo picado.png\" alt=\"Calzate Esta\" style=\"height:140px; width:auto;\">
             </a>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class=\"menu-toggle\" onclick=\"toggleMenu()\">☰</button>
             <nav>
-                <ul id="nav-menu">
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="promociones.html">Promociones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
+                <ul id=\"nav-menu\">
+                    <li><a href=\"index.html\" class=\"active\">Inicio</a></li>
+                    <li><a href=\"productos.html\">Productos</a></li>
+                    <li><a href=\"promociones.html\">Promociones</a></li>
+                    <li><a href=\"contacto.html\">Contacto</a></li>
+                    <li><a href=\"galeria.html\">Galería</a></li>
                 </ul>
             </nav>
+            <div class=\"cart-indicator\" id=\"cart-indicator\">🛒 Carrito (0) - Total: $0</div>
         </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
-        <div class="hero">
+        <div class=\"hero\">
             <h1>¡Bienvenidos a Calzate Esta!</h1>
             <p>Tu local de medias favorito en el centro comercial</p>
-            <a href="productos.html" class="btn">Ver Productos</a>
+            <a href=\"productos.html\" class=\"btn\">Ver Productos</a>
         </div>
 
-        <div class="container">
-            <h2 class="section-title">¿Por qué elegirnos?</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-icon">✨</div>
+        <div class=\"container\">
+            <h2 class=\"section-title\">¿Por qué elegirnos?</h2>
+            <div class=\"cards-grid\">
+                <div class=\"card\">
+                    <div class=\"card-icon\">✨</div>
                     <h3>Calidad Premium</h3>
                     <p>Medias de la mejor calidad y materiales duraderos</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon">🎨</div>
+                <div class=\"card\">
+                    <div class=\"card-icon\">🎨</div>
                     <h3>Variedad de Estilos</h3>
                     <p>Desde clásicas hasta los diseños más modernos</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon">💰</div>
+                <div class=\"card\">
+                    <div class=\"card-icon\">💰</div>
                     <h3>Precios Accesibles</h3>
                     <p>Promociones y combos especiales todo el año</p>
                 </div>
             </div>
 
-            <div class="info-box" style="margin-top: 3rem;">
-                <h2 style="color: #2c3e50; margin-bottom: 1rem;">Sobre Nosotros</h2>
-                <p style="margin-bottom: 1rem;">Calzate Esta es tu tienda de confianza para encontrar las mejores medias. Con más de 10 años de experiencia, ofrecemos productos de calidad para toda la familia.</p>
+            <div class=\"info-box\" style=\"margin-top: 3rem;\">
+                <h2 style=\"color: #2c3e50; margin-bottom: 1rem;\">Sobre Nosotros</h2>
+                <p style=\"margin-bottom: 1rem;\">Calzate Esta es tu tienda de confianza para encontrar las mejores medias. Con más de 10 años de experiencia, ofrecemos productos de calidad para toda la familia.</p>
                 <p>Ubicados en el corazón del centro comercial, te esperamos para ayudarte a encontrar las medias perfectas para cada ocasión.</p>
             </div>
         </div>
@@ -67,12 +72,5 @@
         <p>&copy; 2025 Calzate Esta - Todos los derechos reservados</p>
         <p>Local 145, Centro Comercial Las Palmas | Tel: (011) 4567-8900</p>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('nav-menu');
-            menu.classList.toggle('active');
-        }
-    </script>
 </body>
 </html>

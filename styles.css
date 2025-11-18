@@ -31,6 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .logo {
@@ -38,6 +39,17 @@ header {
     font-weight: bold;
     color: #e74c3c;
     text-decoration: none;
+}
+
+/* Indicador de carrito */
+.cart-indicator {
+    font-weight: 600;
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    white-space: nowrap;
 }
 
 nav ul {
@@ -86,7 +98,7 @@ main {
     text-align: center;
     padding: 4rem 2rem;
     border-radius: 10px;
-    margin-bottom: 2rem;
+    margin: 0 20px 2rem 20px;
 }
 
 .hero h1 {
@@ -315,6 +327,11 @@ footer {
         display: flex;
     }
 
+    .hero {
+        margin: 0 10px 2rem 10px;
+        padding: 3rem 1.5rem;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
@@ -337,5 +354,9 @@ footer {
 
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .cart-indicator {
+        font-size: 0.8rem;
     }
 }

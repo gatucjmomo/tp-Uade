@@ -1,90 +1,95 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang=\"es\">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <title>Contacto - Calzate Esta</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel=\"stylesheet\" href=\"styles.css\">
+    <!-- jQuery -->
+    <script src=\"https://code.jquery.com/jquery-3.7.1.min.js\"></script>
+    <!-- Script principal -->
+    <script src=\"script.js\" defer></script>
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <div class="header-content">
-            <a href="index.html" class="logo">
-                <img src="Logo picado.png" alt="Calzate Esta" style="height:140px; width:auto;">
+        <div class=\"header-content\">
+            <a href=\"index.html\" class=\"logo\">
+                <img src=\"Logo picado.png\" alt=\"Calzate Esta\" style=\"height:140px; width:auto;\">
             </a>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class=\"menu-toggle\" onclick=\"toggleMenu()\">☰</button>
             <nav>
-                <ul id="nav-menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="promociones.html">Promociones</a></li>
-                    <li><a href="contacto.html" class="active">Contacto</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
+                <ul id=\"nav-menu\">
+                    <li><a href=\"index.html\">Inicio</a></li>
+                    <li><a href=\"productos.html\">Productos</a></li>
+                    <li><a href=\"promociones.html\">Promociones</a></li>
+                    <li><a href=\"contacto.html\" class=\"active\">Contacto</a></li>
+                    <li><a href=\"galeria.html\">Galería</a></li>
                 </ul>
             </nav>
+            <div class=\"cart-indicator\" id=\"cart-indicator\">🛒 Carrito (0) - Total: $0</div>
         </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
-        <div class="container">
-            <h1 class="section-title">Contactanos</h1>
+        <div class=\"container\">
+            <h1 class=\"section-title\">Contactanos</h1>
             
-            <div class="contact-grid">
-                <div class="info-box">
-                    <h3 style="color: #2c3e50; margin-bottom: 1rem;">📍 Ubicación</h3>
+            <div class=\"contact-grid\">
+                <div class=\"info-box\">
+                    <h3 style=\"color: #2c3e50; margin-bottom: 1rem;\">📍 Ubicación</h3>
                     <p><strong>Centro Comercial Las Palmas</strong></p>
                     <p>Local 145 - Primer Piso</p>
                     <p>Av. Principal 1234</p>
                     <p>Ciudad, Provincia</p>
                     
-                    <h3 style="color: #2c3e50; margin-top: 2rem; margin-bottom: 1rem;">📞 Teléfono</h3>
+                    <h3 style=\"color: #2c3e50; margin-top: 2rem; margin-bottom: 1rem;\">📞 Teléfono</h3>
                     <p>(011) 4567-8900</p>
                     <p>WhatsApp: +54 9 11 4567-8900</p>
                     
-                    <h3 style="color: #2c3e50; margin-top: 2rem; margin-bottom: 1rem;">📧 Email</h3>
+                    <h3 style=\"color: #2c3e50; margin-top: 2rem; margin-bottom: 1rem;\">📧 Email</h3>
                     <p>info@calzateesta.com.ar</p>
                     <p>ventas@calzateesta.com.ar</p>
                     
-                    <h3 style="color: #2c3e50; margin-top: 2rem; margin-bottom: 1rem;">⏰ Horarios</h3>
+                    <h3 style=\"color: #2c3e50; margin-top: 2rem; margin-bottom: 1rem;\">⏰ Horarios</h3>
                     <p>Lunes a Sábado: 10:00 - 21:00</p>
                     <p>Domingos: 11:00 - 20:00</p>
                     <p>Feriados: 12:00 - 19:00</p>
                 </div>
 
-                <div class="info-box">
-                    <h3 style="color: #2c3e50; margin-bottom: 1rem;">✉️ Envianos un mensaje</h3>
-                    <form onsubmit="handleSubmit(event)">
-                        <div class="form-group">
+                <div class=\"info-box\">
+                    <h3 style=\"color: #2c3e50; margin-bottom: 1rem;\">✉️ Envianos un mensaje</h3>
+                    <form onsubmit=\"handleSubmit(event)\" class=\"contact-form\">
+                        <div class=\"form-group\">
                             <label>Nombre completo:</label>
-                            <input type="text" required placeholder="Ingresá tu nombre">
+                            <input type=\"text\" required placeholder=\"Ingresá tu nombre\">
                         </div>
-                        <div class="form-group">
+                        <div class=\"form-group\">
                             <label>Email:</label>
-                            <input type="email" required placeholder="tu@email.com">
+                            <input type=\"email\" required placeholder=\"tu@email.com\">
                         </div>
-                        <div class="form-group">
+                        <div class=\"form-group\">
                             <label>Teléfono:</label>
-                            <input type="tel" placeholder="(011) 1234-5678">
+                            <input type=\"tel\" placeholder=\"(011) 1234-5678\">
                         </div>
-                        <div class="form-group">
+                        <div class=\"form-group\">
                             <label>Asunto:</label>
-                            <input type="text" required placeholder="Motivo de tu consulta">
+                            <input type=\"text\" required placeholder=\"Motivo de tu consulta\">
                         </div>
-                        <div class="form-group">
+                        <div class=\"form-group\">
                             <label>Mensaje:</label>
-                            <textarea required placeholder="Escribí tu consulta aquí..."></textarea>
+                            <textarea required placeholder=\"Escribí tu consulta aquí...\"></textarea>
                         </div>
-                        <button type="submit" class="btn">Enviar Mensaje</button>
+                        <button type=\"submit\" class=\"btn\">Enviar Mensaje</button>
                     </form>
                 </div>
             </div>
 
-            <div class="info-box" style="margin-top: 2rem; text-align: center;">
-                <h3 style="color: #2c3e50; margin-bottom: 1rem;">🗺️ Cómo llegar</h3>
-                <p style="margin-bottom: 1rem;">Estamos ubicados en el primer piso del Centro Comercial Las Palmas, cerca de la zona de comidas.</p>
-                <div style="background: #f0f0f0; padding: 3rem; border-radius: 10px; color: #999;">
+            <div class=\"info-box\" style=\"margin-top: 2rem; text-align: center;\">
+                <h3 style=\"color: #2c3e50; margin-bottom: 1rem;\">🗺️ Cómo llegar</h3>
+                <p style=\"margin-bottom: 1rem;\">Estamos ubicados en el primer piso del Centro Comercial Las Palmas, cerca de la zona de comidas.</p>
+                <div style=\"background: #f0f0f0; padding: 3rem; border-radius: 10px; color: #999;\">
                     [Aquí iría un mapa de Google Maps]
                 </div>
             </div>
@@ -96,18 +101,5 @@
         <p>&copy; 2025 Calzate Esta - Todos los derechos reservados</p>
         <p>Local 145, Centro Comercial Las Palmas | Tel: (011) 4567-8900</p>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('nav-menu');
-            menu.classList.toggle('active');
-        }
-
-        function handleSubmit(event) {
-            event.preventDefault();
-            alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
-            event.target.reset();
-        }
-    </script>
 </body>
 </html>
